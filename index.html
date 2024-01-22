@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <link rel="stylesheet" href="styless.css" />
+    <link rel="icon" type="image/x-icon" href="fivicon.jpg">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div class="container flex mx-auto">
+      <!-- First Col -->
+      <div class="first w-16 md:w-[73%]">
+        <div class="logo invert my-4">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+          >
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="sidebar flex flex-col md:items-end">
+          <ul class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full">
+            <li
+              class="flex md:justify-start items-center  gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> home </span>
+              <span class="hidden md:block"> Home</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> search </span>
+              <span class="hidden md:block"> Explore</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined">notifications</span>
+              <span class="hidden md:block">notifications</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> mail </span>
+              <span class="hidden md:block"> Message</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> mail </span>
+              <span class="hidden md:block"> Grok</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> lists </span>
+              <span class="hidden md:block"> Lists</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-between md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> group </span>
+              <span class="hidden md:block">Communities</span>
+            </li>
+ 
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> mail </span>
+              <span class="hidden md:block"> Premimum</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> person </span>
+              <span class="hidden md:block"> Profile</span>
+            </li>
+
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit px-5 py-3 hover:bg-gray-900 cursor-pointer rounded-full"
+            >
+              <span class="material-symbols-outlined"> more_horiz </span>
+              <span class="hidden md:block"> More</span>
+            </li>
+          </ul>
+          <div class="button w-full text-center my-4 hidden md:block">
+            <button
+              class="bg-blue-600 px-20 text-2xl rounded-full text-white py-3 font-bold"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second column -->
+      <div
+        class="second w-full border-[1px] border-x-white border-y-black border-opacity-15"
+      >
+        <div class="top flex p-3 relative">
+          <div
+            class="absolute w-14 h-1 rounded-full bg-blue-500 bottom-0 left-[18%] z-"
+          ></div>
+          <div
+            class="left flex justify-center items-center w-1/2 cursor-pointer"
+          >
+            For You
+          </div>
+          <div
+            class="right w-1/2 flex justify-center items-center cursor-pointer"
+          >
+            Following
+          </div>
+          <div class="settings mx-2 cursor-pointer">
+            <span class="material-symbols-outlined"> settings </span>
+          </div>
+        </div>
+        <hr class="opacity-15" />
+
+        <!-- Whats Happening -->
+        <div class="flex gap-4">
+          <div class="imgPart">
+            <img
+              src="IMG_3162 - Copy.JPG"
+              alt=""
+              width="45px"
+              height="45px"
+              class="rounded-full m-2"
+            />
+          </div>
+          <!-- Input -->
+          <div class="w-full">
+            <input
+              type="text"
+              placeholder="What Is Happening?"
+              class="w-full bg-black text-white h-7 my-3 outline-none text-xl"
+            />
+
+            <!-- Globe -->
+            <div class="text-blue-400 flex items-center gap-3 w-full my-4">
+              <span class="material-symbols-outlined"> globe_asia </span>
+              <span class="font-bold">Everyone can Reply</span>
+            </div>
+            <div class="w-[90%] h-[0.2px] bg-gray-400 my-3"></div>
+
+            <!-- BlueIcons -->
+            <div class="blueicons flex gap-2 text-blue-400">
+              <!-- Image -->
+              <span class="material-symbols-outlined cursor-pointer">
+                image
+              </span>
+              <!-- Gif -->
+              <span class="material-symbols-outlined cursor-pointer">
+                gif_box
+              </span>
+              <!-- Poll -->
+              <span class="material-symbols-outlined cursor-pointer">
+                ballot
+              </span>
+              <!-- Emoji -->
+              <span class="material-symbols-outlined cursor-pointer">
+                mood
+              </span>
+              <!-- Calender -->
+              <span class="material-symbols-outlined cursor-pointer">
+                calendar_month
+              </span>
+              <!-- Location -->
+              <span class="material-symbols-outlined cursor-pointer">
+                location_on
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Post Section -->
+        <div class="posts">
+          <!-- Post1 -->
+          <div class="post">
+            <div class="flex">
+              <div class="image">
+                <img
+                  src="IMG_3162 - Copy.JPG "
+                  alt=""
+                  class="w-8 rounded-full m-4"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="my-3">
+                <span
+                  class="font-bold mx-4 text-white hover:underline cursor-pointer"
+                >
+                  non aestheetic things
+                </span>
+                <span class="text-gray-400 cursor-pointer">
+                  @PicturesFolder.6h</span
+                >
+                <div class="mx-4">Legends</div>
+                <!-- Post -->
+                <div class="postimg m-4 ml-0 rounded-sm">
+                  <img
+                    src="https://pbs.twimg.com/media/F97HWHUWsAAIjag?format=jpg&name=small"
+                    alt=""
+                  />
+                </div>
+                <!-- Icons -->
+
+                <div class="postIcons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <!-- Comment -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      chat_bubble </span
+                    >1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Reshare -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      cached
+                    </span>
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Like -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      favorite </span
+                    >5M
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Views -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      signal_cellular_alt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- Post2 -->
+          <div class="post">
+            <div class="flex">
+              <div class="image">
+                <img
+                  src="white-apple-logo-wallpaper.jpg"
+                  alt=""
+                  class="w-8 rounded-full m-4"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="my-3">
+                <span
+                  class="font-bold mx-4 text-white hover:underline cursor-pointer"
+                >
+                  Apple Intro
+                </span>
+                <span class="text-gray-400 cursor-pointer"> @appleIntro</span>
+                <div class="mx-4">
+                  Which Design is Better?S24Ultra or 15 Pro Max
+                </div>
+                <!-- Post -->
+                <div class="postimg m-4 ml-0 rounded-sm">
+                  <img
+                    src="https://pbs.twimg.com/media/GEUyf4KXIAAg9DG?format=jpg&name=small"
+                    alt=""
+                  />
+                </div>
+                <!-- Icons -->
+
+                <div class="postIcons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <!-- Comment -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      chat_bubble </span
+                    >1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Reshare -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      cached
+                    </span>
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Like -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      favorite </span
+                    >10M
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Views -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      signal_cellular_alt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- Post3 -->
+          <div class="post">
+            <div class="flex">
+              <div class="image">
+                <img
+                  src="white-apple-logo-wallpaper.jpg"
+                  alt=""
+                  class="w-8 rounded-full m-4"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="my-3">
+                <span
+                  class="font-bold mx-4 text-white hover:underline cursor-pointer"
+                >
+                  Apple Intro
+                </span>
+                <span class="text-gray-400 cursor-pointer"> @appleIntro</span>
+                <div class="mx-4">
+                  Which Design is Better?S24Ultra or 15 Pro Max
+                </div>
+                <!-- Post -->
+                <div class="postimg m-4 ml-0 rounded-sm">
+                  <video
+                    src="video.mp4"
+                  
+                  ></video>
+                </div>
+                <!-- Icons -->
+
+                <div class="postIcons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <!-- Comment -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      chat_bubble </span
+                    >1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Reshare -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      cached
+                    </span>
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Like -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      favorite </span
+                    >10M
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Views -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      signal_cellular_alt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- Post4 -->
+          <div class="post">
+            <div class="flex">
+              <div class="image">
+                <img
+                  src="white-apple-logo-wallpaper.jpg"
+                  alt=""
+                  class="w-8 rounded-full m-4"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="my-3">
+                <span
+                  class="font-bold mx-4 text-white hover:underline cursor-pointer"
+                >
+                  Affindi
+                </span>
+                <span class="text-gray-400 cursor-pointer"> @Affindi</span>
+                <div class="mx-4">
+                  Build applications that empower users to take control of their
+                  data in 5 simple steps while safeguarding their privacy.
+                  Explore Affinidi now!
+                </div>
+                <!-- Post -->
+                <div class="postimg m-4 ml-0 rounded-sm">
+                  <img
+                    src="https://pbs.twimg.com/media/GDZH5FsbIAA9W05?format=png&name=small"
+                    alt=""
+                  />
+                </div>
+                <!-- Icons -->
+
+                <div class="postIcons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <!-- Comment -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      chat_bubble </span
+                    >1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Reshare -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      cached
+                    </span>
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Like -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      favorite </span
+                    >10M
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <!-- Views -->
+                    <span class="material-symbols-outlined cursor-pointer">
+                      signal_cellular_alt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third column -->
+      <div class="third w-full hidden md:block">
+        <!-- Search -->
+        <div class="search m-3">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="w-1/2 rounded-full text-white bg-[#16181c] py-2 px-4"
+            placeholder="Search"
+          />
+        </div>
+
+        <!-- Whats Happening -->
+        <div class="whats m-3 bg-[#16181c] w-[75%] py-5 rounded-xl">
+          <h1 class="bg-[#16181c] px-3 w-[75%] font-bold">Whats Happening!</h1>
+
+          <div class="items my-3 px-4 p-3">
+            <!-- Sub heading -->
+            <div>
+              <div class="font-bold py-4">
+                Men's wears Fashion week
+                <div class="font-bold text-sm text-gray-700">Fashion.live</div>
+                <img src="uGIM-4y4.jpeg" alt="" class="py-3 rounded-xl" />
+              </div>
+            </div>
+
+            <!-- Trending Item1 -->
+            <div class="hover:bg-gray-800 cursor-pointer py-3">
+              <div class="font-bold text-sm text-gray-700">
+                Entertainment.India
+              </div>
+              <div class="font-bold">#SalmanKhan</div>
+              <div class="font-bold text-sm text-gray-700">
+                Trending with <span class="text-blue-400">#Tiger3</span>
+              </div>
+            </div>
+
+            <!--SportsTrending Item2 -->
+            <div class="hover:bg-gray-800 cursor-pointer py-3">
+              <div class="font-bold text-sm text-gray-700">Sports.Trending</div>
+              <div class="font-bold">#ShoyebMalik</div>
+              <div class="font-bold text-sm text-gray-700">
+                Trending with <span class="text-blue-400"> #SaniyaMirza</span>
+              </div>
+            </div>
+
+            <!--RailwayTrending Item3 -->
+            <div class="hover:bg-gray-800 cursor-pointer py-3">
+              <div class="font-bold text-sm text-gray-700">
+                Trending In India
+              </div>
+              <div class="font-bold">#IncreaseRailwayAPLVacancy</div>
+              <div class="font-bold text-sm text-gray-700">
+                Trending with
+                <span class="text-blue-400"
+                  >#Railway_Vacancy_Increase_Karo</span
+                >
+              </div>
+            </div>
+
+            <div class="text-blue-400 cursor-pointer">Show More</div>
+          </div>
+        </div>
+
+        <!-- Who to Follow Section -->
+        <div class="whats m-3 bg-[#16181c] w-[75%] py-5 rounded-xl">
+          <h1 class="bg-[#16181c] px-3 w-[75%] font-bold">Who to Follow</h1>
+
+          <!-- Follow1 -->
+          <div class="hover:bg-gray-800 cursor-pointer py-3 flex">
+            <img
+              src="salma-khan-lede-768x960.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+              class="rounded-full"
+            />
+            <div class="font-bold flex flex-col px-2">
+              Salman Khan
+              <span>@salmanKhan</span>
+            </div>
+            <button class="px-24">Follow</button>
+          </div>
+
+          <!-- Follow2 -->
+          <div class="hover:bg-gray-800 cursor-pointer py-3 flex">
+            <img
+              src="salma-khan-lede-768x960.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+              class="rounded-full"
+            />
+            <div class="font-bold flex flex-col px-2">
+              Salman Khan
+              <span>@salmanKhan</span>
+            </div>
+            <button class="px-24">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
